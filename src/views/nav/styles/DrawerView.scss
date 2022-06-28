@@ -1,0 +1,60 @@
+.DrawerView {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: calc(100vh - 68px);
+  background: #fff;
+  margin-top: 68px;
+  z-index: 1;
+  overflow-y: scroll;
+  scrollbar-color: #fff transparent;
+  scrollbar-width: thin;
+
+  &:hover {
+    scrollbar-color: #606060 transparent;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #606060;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: red;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  }
+
+  .drawer {
+    display: flex;
+    flex-direction: column;
+
+    &__button {
+      text-decoration: none;
+      display: flex;
+      padding: 0 24px;
+      align-items: center;
+      font-size: 15px;
+      width: 100%;
+      color: #0E0E0E;
+      line-height: 40px;
+
+      &--active, &:hover {
+        background: #E5E5E5;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 24px;
+      }
+    }
+  }
+}

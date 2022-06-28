@@ -1,0 +1,180 @@
+.NavView {
+  padding: 0 16px;
+  position: relative;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__start {
+      display: flex;
+      
+      .hamburger {
+        background: none;
+        display: flex;
+        align-items: center;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .main-logo {
+        position: relative;
+
+        a {
+          padding: 18px 14px 18px 16px;
+          display: flex;
+          text-decoration: none;
+
+          svg {
+            height: 20px;
+            width: 90px;
+          }
+        }
+
+        .country-code {
+          position: absolute;
+          top: 2px;
+          right: -13px;
+          z-index: 2;
+          font-size: 11px;
+        }
+      }
+    }
+
+    &__center {
+      display: flex;
+      align-items: center;
+
+      .search-form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        margin-left: 27px;
+
+        &__control {
+          width: 572px;
+          position: relative;
+          padding-left: 34px;
+
+          &.search-form--focus {
+            padding-left: 0;
+          }
+
+          svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        &__input {
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          line-height: 24px;
+          height: 40px;
+          z-index: 1;
+          width: 100%;
+          position: relative;
+          font-family: inherit;
+          font-size: 17px;
+          padding: 0 4px;
+          font-weight: 400;
+        }
+
+        &__button {
+          display: flex;
+          border: 1px solid #ccc;
+          border-left-style: none;
+          border-top-right-radius: 2px;
+          border-bottom-right-radius: 2px;
+          width: 64px;
+          height: 40px;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+
+      .voice-search {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #F9F9F9;
+        border: none;
+        margin-left: 8px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    &__end {
+      display: flex;
+      align-items: center;
+
+      .yt-apps {
+        background: none;
+        display: flex;
+        align-items: center;
+        border: none;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .settings {
+        background: none;
+        display: flex;
+        align-items: center;
+        border: none;
+        margin: 0 12px 0 16px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .sign-in {
+        background: none;
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--accent-color);
+        color: var(--accent-color);
+        fill: var(--accent-color);
+        text-transform: uppercase;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 7px 11px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

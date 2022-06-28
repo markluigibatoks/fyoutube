@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$primaryColor: #030303;
+$backgroundColor: #fff;
+$accentColor: #065FD4;
+
+
+:root {
+  --primary-txt-color: #{$primaryColor};
+  --background-color: #{$backgroundColor};
+  --accent-color: #{$accentColor};
+}
+
+// html[data-theme='theme--dark'] {
+//   background: var(--background-color);
+  
+//   --primary-txt-color: #fff;
+//   --background-color: #000;
+//   --accent-color: #065FD4;
+// }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--primary-txt-color);
+  position: relative;
+  line-height: 2.2rem;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
