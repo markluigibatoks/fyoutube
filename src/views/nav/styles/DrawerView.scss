@@ -1,35 +1,38 @@
+@import 'src/assets/styles/constants.scss';
+
 .DrawerView {
   position: absolute;
   top: 0;
   left: 0;
   width: 240px;
-  height: calc(100vh - 68px);
-  background: #fff;
-  margin-top: 68px;
+  height: calc(100vh - 56px);
+  background: var(--drawer-view-bg);
+  margin-top: 56px;
+  padding-top: 12px;
   z-index: 1;
   overflow-y: scroll;
-  scrollbar-color: #fff transparent;
+  scrollbar-color: var(--drawer-view-bg) transparent;
   scrollbar-width: thin;
 
   &:hover {
-    scrollbar-color: #606060 transparent;
+    scrollbar-color: $primaryColorDark transparent;
 
     &::-webkit-scrollbar-thumb {
-      background-color: #606060;
+      background-color: $primaryColorDark;
     }
   }
 
   &::-webkit-scrollbar-track {
-    background-color: #fff;
+    background-color: var(--drawer-view-bg);
   }
   
   &::-webkit-scrollbar {
     width: 10px;
-    background-color: red;
+    background-color:  $primaryColorDark;
   }
   
   &::-webkit-scrollbar-thumb {
-    background-color: #fff;
+    background-color: $primaryColorDark;
   }
 
   .drawer {
@@ -43,11 +46,12 @@
       align-items: center;
       font-size: 15px;
       width: 100%;
-      color: #0E0E0E;
+      color: var(--drawer-txt-color);
       line-height: 40px;
+      fill: var(--drawer-txt-color);
 
       &--active, &:hover {
-        background: #E5E5E5;
+        background: var(--drawer-hover-bg);
       }
 
       svg {

@@ -12,6 +12,23 @@ export default {
 
   components: {
     NavView
+  },
+
+  computed: {
+    mediaPreference () {
+      const hasDarkPreference = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches
+
+      if (hasDarkPreference) {
+        return 'theme--dark'
+      }
+      return 'theme--light'
+    }
+  },
+
+  mounted () {
+    document.getElementsByTagName('html')[0].setAttribute('data-theme', this.mediaPreference)
   }
 }
 </script>

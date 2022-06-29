@@ -2,62 +2,65 @@
   <div class="ChipsView">
     <div class="wrapper">
       <div class="chips">
-        <div class="chip chip--active">
-          All
-        </div>
-        <div class="chip">
-          Music
-        </div>
-        <div class="chip">
-          Playlists
-        </div>
-        <div class="chip">
-          Philippine Music
-        </div>
-        <div class="chip">
-          Mixes
-        </div>
-        <div class="chip">
-          Design Course
-        </div>
-        <div class="chip">
-          Live
-        </div>
-        <div class="chip">
-          Developer
-        </div>
-        <div class="chip">
-          Flutter
-        </div>
-        <div class="chip">
-          HTML
-        </div>
-        <div class="chip">
-          CSS
-        </div>
-        <div class="chip">
-          JavaScript
-        </div>
-        <div class="chip">
-          Dart
-        </div>
-        <div class="chip">
-          VueJS
-        </div>
-        <div class="chip">
-          NodeJS
-        </div>
-        <div class="chip">
-          MySQL
-        </div>
+        <chip
+          name="All"
+          active
+        />
+        <chip
+          name="Music"
+        />
+        <chip
+          name="Playlists"
+        />
+        <chip
+          name="Philippine Music"
+        />
+        <chip
+          name="Mixes"
+        />
+        <chip
+          name="Design Course"
+        />
+        <chip
+          name="Live"
+        />
+        <chip
+          name="Developer"
+        />
+        <chip
+          name="Flutter"
+        />
+        <chip
+          name="HTML"
+        />
+        <chip
+          name="CSS"
+        />
+        <chip
+          name="JavaScript"
+        />
+        <chip
+          name="Dart"
+        />
+        <chip
+          name="VueJS"
+        />
+        <chip
+          name="NodeJS"
+        />
+        <chip
+          name="MySQL"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Chip from '@/components/chip.vue'
 export default {
-  name: 'ChipsView'
+  name: 'ChipsView',
+  components: { Chip }
 }
 </script>
 

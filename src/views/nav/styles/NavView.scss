@@ -1,6 +1,12 @@
 .NavView {
   padding: 0 16px;
   position: relative;
+  background: var(--nav-view-bg);
+
+  button, .main-logo, .search-form {
+    fill: var(--nav-view-icon);
+  }
+
   .nav {
     display: flex;
     align-items: center;
@@ -64,20 +70,30 @@
 
           &.search-form--focus {
             padding-left: 0;
+
+            .search-form__input {
+              padding-left: 38px;
+            }
+
+            svg {
+              display: block;
+            }
           }
 
           svg {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left: 0;
-            width: 24px;
-            height: 24px;
+            left: 12px;
+            width: 20px;
+            height: 20px;
+            z-index: 2;
+            display: none;
           }
         }
 
         &__input {
-          border: 1px solid #ccc;
+          border: 1px solid var(--nav-search-border);
           border-radius: 2px;
           border-top-right-radius: 0;
           border-bottom-right-radius: 0;
@@ -90,11 +106,26 @@
           font-size: 17px;
           padding: 0 4px;
           font-weight: 400;
+          background: var(--nav-search-bg);
+          color: #fff;
+
+          &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: var(--nav-placeholder);
+            opacity: 1; /* Firefox */
+          }
+          
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: var(--nav-placeholder);
+          }
+          
+          &::-ms-input-placeholder { /* Microsoft Edge */
+            color: var(--nav-placeholder);
+          }
         }
 
         &__button {
           display: flex;
-          border: 1px solid #ccc;
+          border: 1px solid var(--nav-search-border);
           border-left-style: none;
           border-top-right-radius: 2px;
           border-bottom-right-radius: 2px;
@@ -102,6 +133,8 @@
           height: 40px;
           justify-content: center;
           align-items: center;
+          background: var(--nav-search-button);
+          cursor: pointer;
 
           svg {
             width: 24px;
@@ -114,9 +147,10 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: #F9F9F9;
+        background: var(--nav-search-voice);
         border: none;
         margin-left: 8px;
+        cursor: pointer;
 
         svg {
           width: 24px;
@@ -134,6 +168,7 @@
         display: flex;
         align-items: center;
         border: none;
+        cursor: pointer;
 
         svg {
           width: 24px;
@@ -147,6 +182,7 @@
         align-items: center;
         border: none;
         margin: 0 12px 0 16px;
+        cursor: pointer;
 
         svg {
           width: 24px;
@@ -168,6 +204,7 @@
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.5px;
+        cursor: pointer;
 
         svg {
           width: 24px;

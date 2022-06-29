@@ -1,23 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-$primaryColor: #030303;
-$backgroundColor: #fff;
-$accentColor: #065FD4;
-
+@import './constants.scss';
 
 :root {
   --primary-txt-color: #{$primaryColor};
-  --background-color: #{$backgroundColor};
+  --secondary-txt-color: #{$secondaryColor};
+  --background-color: #{$bgColor};
   --accent-color: #{$accentColor};
+
+  //Drawer Color Scheme
+  --drawer-view-bg: #{$drawerViewBg};
+  --drawer-hover-bg: #{$drawerHoverBg};
+  --drawer-txt-color: #{$drawerTxtColor};
+
+  // Nav Color Scheme
+  --nav-view-bg: #{$navViewBg};
+  --nav-view-icon: #{$navViewIcon};
+  --nav-placeholder: #{$navPlaceholder};
+
+  --nav-search-bg: #{$navSearchBg};
+  --nav-search-border: #{$navSearchBorder};
+  --nav-search-button: #{$navSearchButton};
+  --nav-search-voice: #{$navSearchVoice};
+
+  // Chip Color Scheme
+  --chip-view-bg: #{$chipViewBg};
+  --chip-view-border: #{$chipViewBorder};
+
+  --chip-bg: #{$chipBg};
+  --chip-border: #{$chipBorder};
+
+  --chip-active-bg: #{$chipActiveBg};
+  --chip-active-border: #{$chipActiveBorder};
+
+  --chip-hover-bg: #{$chipHoverBg};
+  --chip-hover-border: #{$chipHoverBorder};
 }
 
-// html[data-theme='theme--dark'] {
-//   background: var(--background-color);
-  
-//   --primary-txt-color: #fff;
-//   --background-color: #000;
-//   --accent-color: #065FD4;
-// }
+html[data-theme='theme--dark'] {
+  --primary-txt-color: #{$primaryColorDark};
+  --secondary-txt-color: #{$secondaryColorDark};
+  --background-color: #{$bgColorDark};
+
+  //Drawer Color Scheme
+  --drawer-view-bg: #{$drawerViewBgDark};
+  --drawer-hover-bg: #{$drawerHoverBgDark};
+  --drawer-txt-color: #{$drawerTxtColorDark};
+
+  // Nav Color Scheme
+  --nav-view-bg: #{$navViewBgDark};
+  --nav-view-icon: #{$navViewIconDark};
+  --nav-placeholder: #{$navPlaceholderDark};
+
+  --nav-search-bg: #{$navSearchBgDark};
+  --nav-search-border: #{$navSearchBorderDark};
+  --nav-search-button: #{$navSearchButtonDark};
+  --nav-search-voice: #{$navSearchVoiceDark};
+
+  // Chip Color Scheme
+  --chip-view-bg: #{$chipViewBgDark};
+  --chip-view-border: #{$chipViewBorderDark};
+
+  --chip-bg: #{$chipBgDark};
+  --chip-border: #{$chipBorderDark};
+
+  --chip-active-bg: #{$chipActiveBgDark};
+  --chip-active-border: #{$chipActiveBorderDark};
+
+  --chip-hover-bg: #{$chipHoverBgDark};
+  --chip-hover-border: #{$chipHoverBorderDark};
+}
 
 body {
   font-family: 'Roboto', sans-serif;

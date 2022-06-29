@@ -1,34 +1,11 @@
 .ChipsView {
-  border-top: 1px solid #E5E5E5;
-  border-bottom: 1px solid #E5E5E5;
+  border-top: 1px solid var(--chip-view-border);
+  border-bottom: 1px solid var(--chip-view-border);
+  background: var(--chip-view-bg);
 
   .chips {
     overflow-x: hidden;
     display: flex;
     justify-content: flex-start;
-
-    .chip {
-      border-radius: 16px;
-      border: 1px solid #E9E9E9;
-      background: #F2F2F2;
-      padding: 0 12px;
-      height: 32px;
-      min-width: 12px;
-      margin: 12px 0 12px 12px;
-      flex-shrink: 0;
-      font-size: 15px;
-      display: flex;
-      align-items: center;
-
-      &:first-child {
-        margin-left: 24px;
-      }
-
-      &--active {
-        background: #030303;
-        color: #fff;
-        border: 1px solid #030303;
-      }
-    }
   }
 }

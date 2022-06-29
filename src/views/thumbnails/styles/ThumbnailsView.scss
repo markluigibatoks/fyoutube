@@ -8,7 +8,6 @@
     justify-content: center;
 
     .thumbnail {
-      // max-width: 480px;
       max-width: 360px;
       margin: 0 8px 40px 8px;
 
@@ -46,7 +45,7 @@
         }
 
         &__title {
-          color: #030303;
+          color: var(--primary-txt-color);
           text-decoration: none;
           font-size: 16px;
           font-weight: 500;
@@ -66,11 +65,11 @@
         &__append {
           background: none;
           border: none;
-          cursor: pointer;
           display: none;
           position: absolute;
           top: 0;
           right: 0;
+          cursor: pointer;
 
           svg {
             width: 24px;

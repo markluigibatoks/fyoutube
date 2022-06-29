@@ -1,0 +1,32 @@
+@import '../constants.scss';
+
+.chip {
+  border-radius: 16px;
+  border: 1px solid var(--chip-border);
+  background: var(--chip-bg);
+  padding: 0 12px;
+  height: 32px;
+  min-width: 12px;
+  margin: 12px 0 12px 12px;
+  flex-shrink: 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:first-child {
+    margin-left: 24px;
+  }
+
+  &:hover:not(&--active) {
+    border: 1px solid var(--chip-hover-border);
+    background: var(--chip-hover-bg);
+    color: $primaryColor;
+  }
+
+  &--active {
+    border: 1px solid var(--chip-active-border);
+    background: var(--chip-active-bg);
+    color: var(--secondary-txt-color);
+  }
+}
