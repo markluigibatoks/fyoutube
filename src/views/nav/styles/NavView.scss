@@ -107,7 +107,7 @@
           padding: 0 4px;
           font-weight: 400;
           background: var(--nav-search-bg);
-          color: #fff;
+          color: var(--primary-txt-color);
 
           &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
             color: var(--nav-placeholder);
